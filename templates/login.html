@@ -1,0 +1,30 @@
+{{ define "login" }}
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    {{ template "header" . }}
+
+
+    <form class="form-signin" role="form" action="/login" method="POST">
+        <h2 class="form-signin-heading">
+            Login
+        </h2>
+
+        <input type="email" name="email" class="form-control" placeholder="Email" required>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    </form>
+
+    <a href="/"></a>
+</body>
+
+</html>
+
+{{ end }}

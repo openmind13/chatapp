@@ -1,0 +1,39 @@
+{{ define "signup" }}
+
+
+<html>
+
+<title>Signup</title>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+    {{ template "header" . }}
+
+    <form class="form-signin" role="form" action="/signup" method="POST">
+        <h2 class="form-signin-heading">
+            Signup
+        </h2>
+
+        <input id="username" name="username" type="text" class="form-control" placeholder="Username" required autofocus>
+        <input type="email" name="email" class="form-control" placeholder="Email" required>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+    </form>
+
+
+</body>
+
+</html>
+
+
+
+
+
+{{ end }}

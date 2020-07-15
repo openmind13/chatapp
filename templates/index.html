@@ -1,0 +1,30 @@
+{{ define "index" }}
+
+<html>
+
+<head>
+    
+</head>
+
+<body>
+
+    {{ template "header" . }}
+
+    
+
+    {{ if . }}
+
+    <h2>login with {{ .Username }}</h2>
+    <a href="/chat">Chat</a>
+
+    {{ else }}
+
+    <a href="/login">Login</a>
+    <a href="/signup">Signup</a>
+
+    {{ end }}
+</body>
+
+</html>
+
+{{ end }}
