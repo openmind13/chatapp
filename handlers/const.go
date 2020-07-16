@@ -1,6 +1,6 @@
 package handlers
 
-var (
+const (
 	userUUIDCookieName = "user_uuid"
 	usernameCookieName = "username"
 )
