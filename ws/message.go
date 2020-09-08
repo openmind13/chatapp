@@ -1,6 +1,6 @@
 package ws
 
-// Message ...
+// Message struct
 type Message struct {
 	Username string `json:"username"`
 	UUID     string `json:"uuid"`
